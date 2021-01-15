@@ -180,6 +180,10 @@
 
     </div>
 
+    <div class="w-full flex justify-center items-center px-10 py-4 bg-gray-300 font-semibold text-gray-700">
+        Arya Dhievha Rusdiana | RPL XII-3
+    </div>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script>
