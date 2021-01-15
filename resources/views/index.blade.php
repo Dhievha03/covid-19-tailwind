@@ -26,16 +26,16 @@
             </div>
             
             <div class="md:block hidden">
-                <a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500" id="pengertian">Pengertian</a>
-                <a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500" id="penularan">Penularan</a>
-                <a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500" id="pencegahan">Pencegahan</a>
+                <a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 pengertian">Pengertian</a>
+                <a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 penularan">Penularan</a>
+                <a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 pencegahan">Pencegahan</a>
             </div>
 
             <div class="hidden" id="menu">
                 <ul class="text-center">
-                    <li class="py-2"><a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500" id="pengertian-2">Pengertian</a></li>
-                    <li class="py-2"><a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500" id="penularan-2">Penularan</a></li>
-                    <li class="py-2"><a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500" id="pencegahan-2">Pencegahan</a></li>
+                    <li class="py-2"><a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 pengertian">Pengertian</a></li>
+                    <li class="py-2"><a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 penularan">Penularan</a></li>
+                    <li class="py-2"><a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 pencegahan">Pencegahan</a></li>
                 </ul>
             </div>
         </div>
@@ -200,40 +200,23 @@
 </script>
 
 <script>
-    $("#pengertian").click(function() {
+    $(".pengertian").click(function() {
         $('html,body').animate({
             scrollTop: $("#pengertian-1").offset().top},
             'slow');
     });
 
-    $("#penularan").click(function() {
+    $(".penularan").click(function() {
         $('html,body').animate({
             scrollTop: $("#penularan-1").offset().top},
             'slow');
     });
 
-    $("#pencegahan").click(function() {
+    $(".pencegahan").click(function() {
         $('html,body').animate({
             scrollTop: $("#pencegahan-1").offset().top},
             'slow');
     });
 
-    $("#pengertian-2").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#pengertian-1").offset().top},
-            'slow');
-    });
-
-    $("#penularan-2").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#penularan-1").offset().top},
-            'slow');
-    });
-
-    $("#pencegahan-2").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#pencegahan-1").offset().top},
-            'slow');
-    });
 </script>
 </html>
