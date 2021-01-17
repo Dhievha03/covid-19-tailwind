@@ -24,22 +24,15 @@
                     </svg>
                 </div>
             </div>
-            
-            <div class="md:block hidden">
-                <a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 pengertian">Pengertian</a>
-                <a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 penularan">Penularan</a>
-                <a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 pencegahan">Pencegahan</a>
-            </div>
 
-            <div class="hidden" id="menu">
-                <ul class="text-center">
+            <div class="hidden md:flex" id="menu">
+                <ul class="text-center md:flex md:flex-row">
                     <li class="py-2"><a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 pengertian">Pengertian</a></li>
                     <li class="py-2"><a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 penularan">Penularan</a></li>
                     <li class="py-2"><a href="#" class="text-purple-400 hover:text-purple-300 p-2 font-semibold transition ease-out duration-500 pencegahan">Pencegahan</a></li>
                 </ul>
             </div>
         </div>
-        
     </div>
 
     <div class="md:flex px-10 py-20 items-center md:mt-20 mt-10">
