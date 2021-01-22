@@ -41,7 +41,7 @@
         </div>
 
         <div class="md:w-1/2 md:text-left text-center md:ml-20">
-            <div class="sm:text-2xl lg:text-4xl mb-6 text-xl tracking-widest font-bold">
+            <div class="sm:text-2xl lg:text-4xl mb-6 text-l tracking-widest font-bold">
                 <span class="md:block">
                     Selamat Datang di
                 </span>
@@ -50,7 +50,7 @@
                 </span>
             </div>            
             <p class="mb-6 md:text-xl font-semibold">Yang Anda cari ada disini</p>
-            <div class="flex md:justify-end justify-center">
+            <div class="flex md:justify-end md:mr-10 justify-center">
                 <div class="bg-purple-700 sm:w-10 sm:h-10 flex items-center justify-center rounded-full animate-bounce w-7 h-7">
                     <svg class="sm:w-6 sm:h-6 w-4 h-4 text-white rounded-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -63,59 +63,58 @@
     </div>
 
     @foreach ($data as $d)
-    <div class="md:px-10 px-4 md:py-20 py-4">
-        <div class="grid md:grid-cols-4 md:gap-10 grid-cols-2 gap-5">
-            <div class="bg-yellow-400 p-5 flex flex-col text-white items-center justify-center rounded shadow-xl">
-                <svg class="w-14 h-14 flex items-center animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                
-                <div class="font-bold text-center">
-                    <p>Positif</p>
-                    <p>{{$d['positif']}}</p>
-                </div>
-            </div>
-    
-            <div class="bg-blue-500 p-5 flex flex-col text-white items-center justify-center rounded shadow-xl">
-                <div class="">
+        <div class="md:px-20 px-4 md:py-20 py-4">
+            <div class="grid md:grid-cols-4 md:gap-10 grid-cols-2 gap-5">
+                <div class="bg-yellow-400 p-5 flex flex-col text-white items-center justify-center rounded shadow-xl">
                     <svg class="w-14 h-14 flex items-center animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
+                    
+                    <div class="font-bold text-center">
+                        <p>Positif</p>
+                        <p>{{$d['positif']}}</p>
+                    </div>
                 </div>
-                
-                <div class="font-bold text-center">
-                    <p>Dirawat</p>
-                    <p>{{$d['dirawat']}}</p>
+
+                <div class="bg-blue-500 p-5 flex flex-col text-white items-center justify-center rounded shadow-xl">
+                    <div class="">
+                        <svg class="w-14 h-14 flex items-center animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="font-bold text-center">
+                        <p>Dirawat</p>
+                        <p>{{$d['dirawat']}}</p>
+                    </div>
                 </div>
-            </div>
-    
-            <div class="bg-red-500 p-5 flex flex-col text-white items-center justify-center rounded shadow-xl">
-                <svg class="w-14 h-14 flex items-center animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                </svg>
-                
-                <div class="font-bold text-center">
-                    <p>Meninggal</p>
-                    <p>{{$d['meninggal']}}</p>
+        
+                <div class="bg-red-500 p-5 flex flex-col text-white items-center justify-center rounded shadow-xl">
+                    <svg class="w-14 h-14 flex items-center animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                    
+                    <div class="font-bold text-center">
+                        <p>Meninggal</p>
+                        <p>{{$d['meninggal']}}</p>
+                    </div>
                 </div>
-            </div>
-    
-            <div class="bg-green-600 p-5 flex flex-col text-white items-center justify-center rounded shadow-xl">
-                <svg class="w-14 h-14 flex items-center animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>            
-                <div class="font-bold text-center">
-                    <p>Sembuh</p>
-                    <p>{{$d['sembuh']}}</p>
+        
+                <div class="bg-green-600 p-5 flex flex-col text-white items-center justify-center rounded shadow-xl">
+                    <svg class="w-14 h-14 flex items-center animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>            
+                    <div class="font-bold text-center">
+                        <p>Sembuh</p>
+                        <p>{{$d['sembuh']}}</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     @endforeach
 
-    <div class="container">
-
-        <div class="md:px-10 md:py-10 px-4 py-4 space-y-2" id="pengertian-1">
+    <div class="md:px-20 md:py-10 px-4 py-4 space-y-2">
+        <div id="pengertian-1">
             <div class="md:text-4xl sm:text-2xl text-xl font-bold text-purple-900 border-b border-purple-400 p-6">
                 Apa Itu Covid-19?
             </div>
@@ -132,7 +131,7 @@
             </div>
         </div>
     
-        <div class="md:px-10 md:py-10 px-4 py-4 space-y-2" id="penularan-1">
+        <div id="penularan-1">
             <div class="md:text-4xl sm:text-2xl text-xl font-bold text-purple-900 border-b border-purple-400 p-6">
                 Penularan
             </div>
@@ -151,7 +150,7 @@
             </div>
         </div>
     
-        <div class="md:px-10 md:py-10 px-4 py-4 space-y-2" id="pencegahan-1">
+        <div id="pencegahan-1">
             <div class="md:text-4xl sm:text-2xl text-xl font-bold text-purple-900 border-b border-purple-400 p-6">
                 Pencegahan
             </div>
@@ -170,7 +169,6 @@
                 </span>
             </div>
         </div>
-
     </div>
 
     <div class="w-full flex justify-center items-center px-10 py-4 bg-gray-300 font-semibold text-gray-700">
