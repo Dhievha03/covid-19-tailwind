@@ -177,7 +177,7 @@
     <div class="w-full flex md:justify-end items-center px-20 py-10 bg-gray-800 font-semibold text-white justify-center ">
         <ul class="text-sm md:text-md text-center md:text-left">
             <a href="https://github.com/Dhievha03" class="hover:text-gray-400"><li><i class="fab fa-github"></i> Dhievha03</li></a>
-            <a href="https://www.linkedin.com/in/arya-dhievha-rusdiana-3797b5191/" class="hover:text-gray-400"><li class="mt-2"><i class="fab fa-linkedin-in"></i> Arya Dhievha Rusdiana</li></a>
+            <a href="https://www.linkedin.com/in/arya-dhievha-rusdiana-3797b5191/" class="hover:text-gray-400"><li class="mt-5"><i class="fab fa-linkedin-in"></i> Arya Dhievha Rusdiana</li></a>
         </ul>
     </div>
 
