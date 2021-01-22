@@ -9,6 +9,7 @@
     <script src="{{asset('js/app.js')}}"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/f38b57ad54.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div x-data="{ scrolAtTop: true }" class="flex flex-col-reverse">
@@ -173,8 +174,11 @@
         </div>
     </div>
 
-    <div class="w-full flex justify-center items-center px-10 py-4 bg-gray-300 font-semibold text-gray-700">
-        Arya Dhievha Rusdiana | RPL XII-3
+    <div class="w-full flex md:justify-end items-center px-20 py-10 bg-gray-800 font-semibold text-white justify-center ">
+        <ul class="text-sm md:text-md text-center md:text-left">
+            <a href="https://github.com/Dhievha03" class="hover:text-gray-400"><li><i class="fab fa-github"></i> Dhievha03</li></a>
+            <a href="https://www.linkedin.com/in/arya-dhievha-rusdiana-3797b5191/" class="hover:text-gray-400"><li><i class="fab fa-linkedin-in"></i> Arya Dhievha Rusdiana</li></a>
+        </ul>
     </div>
 
 </body>
